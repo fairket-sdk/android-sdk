@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FairketSampleAppGingerbread</string>
+    <string name="hello_world">First world!</string>
+    <string name="second_activity">Second world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
