@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/header_layout" />
+
+    <RelativeLayout
+        android:id="@+id/grpFairketInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grpHeader"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/grpFairketAppInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp" >
+
+            <ImageView
+                android:id="@+id/imgAppIcon"
+                android:layout_width="36dip"
+                android:layout_height="36dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_fairket" />
+
+            <TextView
+                android:id="@+id/txtApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgAppIcon"
+                android:gravity="center"
+                android:text="@string/fairket_meter_app"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtFairketDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grpFairketAppInfo"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/fairket_desc"
+            android:textColor="@color/fairket_text_2"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/grpWhyFairket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/grpFairketInfo" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/grpFeature2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imgFeature2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_fairket_choice" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgFeature2" >
+
+                    <TextView
+                        android:id="@+id/txtFeatureTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fairket_feature_choice_title"
+                        android:textColor="@color/fairket_text_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtFeatureDesc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtFeatureTitle2"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/fairket_feature_choice_desc"
+                        android:textColor="@color/fairket_text_2"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/grpFeature1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imgFeature"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_fairket_access" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgFeature" >
+
+                    <TextView
+                        android:id="@+id/txtFeatureTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fairket_feature_access_title"
+                        android:textColor="@color/fairket_text_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtFeatureDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtFeatureTitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/fairket_feature_access_desc"
+                        android:textColor="@color/fairket_text_2"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/imgFooter"
+        android:layout_below="@id/grpWhyFairket"
+        android:gravity="center"
+        android:text="Gesture Animation"
+        android:textColor="@color/fairket_text_1"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFooter"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:src="@drawable/ic_fairket_footer_2" />
+
+</RelativeLayout>

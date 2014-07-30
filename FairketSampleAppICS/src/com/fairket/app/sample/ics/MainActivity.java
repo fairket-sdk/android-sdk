@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.fairket.sdk.android.FairketApiClient;
-import com.fairket.sdk.android.FairketException;
 import com.fairket.sdk.android.FairketResult;
 
 /**
@@ -34,38 +33,26 @@ public class MainActivity extends ActionBarActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 
-		try {
-			mFairket = new FairketApiClient(this, base64PublicKey);
-		} catch (FairketException e) {
-			Log.wtf(Constants.LOG_TAG, e);
-		}
+		mFairket = new FairketApiClient(this, base64PublicKey);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		try {
-			mFairket.initialize(new FairketApiClient.OnInitializeListener() {
+		mFairket.initialize(new FairketApiClient.OnInitializeListener() {
 
-				@Override
-				public void onInitializeFinished(FairketResult result) {
-					if (result.isSuccess()) {
-						Log.d(Constants.LOG_TAG, "Bhulok init successful!");
-						try {
-							mFairket.trackAppTime(null);
-						} catch (FairketException e) {
-							Log.wtf(Constants.LOG_TAG, e);
-						}
-					} else {
-						Log.d(Constants.LOG_TAG, "Oops, Bhulok init failed! "
-								+ result.getMessage());
-					}
+			@Override
+			public void onInitializeFinished(FairketResult result) {
+				if (result.isSuccess()) {
+					Log.d(Constants.LOG_TAG, "Fairket init successful!");
+					mFairket.trackAppTime(null);
+				} else {
+					Log.d(Constants.LOG_TAG, "Oops, Fairket init failed! "
+							+ result.getMessage());
 				}
-			});
-		} catch (FairketException e) {
-			Log.wtf(Constants.LOG_TAG, e);
-		}
+			}
+		});
 
 	}
 

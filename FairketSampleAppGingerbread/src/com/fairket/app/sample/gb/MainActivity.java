@@ -1,20 +1,18 @@
 package com.fairket.app.sample.gb;
 
-import com.fairket.sdk.android.FairketApiClient;
-import com.fairket.sdk.android.FairketHelperForGingerbread;
-
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.os.Build;
+
+import com.fairket.sdk.android.FairketApiClient;
+import com.fairket.sdk.android.FairketAppTimeHelper;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -30,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 
-		mFairketApiClient = FairketHelperForGingerbread.onCreate(this,
+		mFairketApiClient = FairketAppTimeHelper.onCreate(this,
 				Constants.FAIRKET_APP_PUBLIC_KEY, Constants.LOG_TAG);
 	}
 
@@ -38,21 +36,21 @@ public class MainActivity extends ActionBarActivity {
 	protected void onResume() {
 		super.onResume();
 
-		FairketHelperForGingerbread.onResume(mFairketApiClient);
+		FairketAppTimeHelper.onResume(mFairketApiClient);
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
 
-		FairketHelperForGingerbread.onPause(mFairketApiClient);
+		FairketAppTimeHelper.onPause(mFairketApiClient);
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 
-		FairketHelperForGingerbread.onDestroy(mFairketApiClient);
+		FairketAppTimeHelper.onDestroy(mFairketApiClient);
 	}
 
 	@Override

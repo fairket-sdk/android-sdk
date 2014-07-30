@@ -1,5 +1,41 @@
 <resources>
 
-    <string name="app_name">fairket-lib</string>
+    <string name="fairket_metered_title">Welcome</string>
+    <string name="fairket_locked_title">Locked by Fairket</string>
+    <string name="fairket_desc">\"Fairket is a new way to buy mobile apps\"</string>
+    <string name="fairket_meter_app">is Metered By Fairket</string>
+    <string name="fairket_feature_access_title">Value For Money</string>
+    <string name="fairket_feature_access_desc">Topup Once Spend Across Apps</string>
+    <string name="fairket_feature_choice_title">Usage Based Pricing</string>
+    <string name="fairket_feature_choice_desc">Free Trial, Pay For Use, etc</string>
+    <string name="lock_later_action">Later</string>
+    <string name="lock_install_fairket_msg">Fairket app is required to proceed further.\n\nTo unlock, install Fairket app and signup for a pricing plan</string>
+    <string name="lock_install_fairket_action">Install Fairket</string>
+    <string name="lock_kitty_balance_msg">Insufficient Fairket credits.\n\nTo unlock, topup Fairket credits</string>
+    <string name="lock_kitty_balance_action">Topup Credits</string>
+    <string name="lock_invalid_session_msg">You are not signed in.\n\n
+        To unlock, signin to Fairket app</string>
+    <string name="lock_invalid_session_action">Signin Fairket</string>
+    <string name="lock_generic_error_msg">Unexpected error.\n\n
+        To unlock, try later or contact support if problem persists</string>
+    <string name="lock_generic_error_action">Contact Support</string>
+    <string name="lock_app_config_msg">Invalid app configuration.\n\n
+        To unlock, try later or contact support if problem persists</string>
+    <string name="lock_app_config_action">Contact Support</string>
+    <string name="lock_trial_plan_exp_prefix">Trial plan has expired.</string>
+    <string name="lock_plan_paid_subscription_msg">Trial plan has expired.\n\n
+        To unlock, subscribe to a plan of your choice</string>
+    <string name="lock_plan_paid_subscription_action">Subscribe Plan</string>
+    <string name="lock_plan_subscription_msg">No plan subscribed.\n\n
+        To unlock, subscribe to a plan of your choice</string>
+    <string name="lock_plan_subscription_action">Subscribe Plan</string>
+    <string name="lock_data_connection_msg">No data connection.\n\n
+        To unlock, try later or check your network settings.</string>
+    <string name="lock_data_connection_action">Open Settings</string>
+    <string name="lock_service_disconnected_msg">Fairket metering error.\n\n
+        To unlock, try later or reopening the app</string>
+    <string name="lock_service_disconnected_action">Quit</string>
+    <string name="fairket_initalizing">Fairket Initializing...</string>
+    <string name="lock_account_migrated">You already have a fairket account.</string>
 
 </resources>
