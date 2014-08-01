@@ -9,7 +9,7 @@
 
     <application android:allowBackup="true" >
         <activity
-            android:name="com.bhulok.sdk.android.ux.WelcomeActivity"
+            android:name="com.fairket.sdk.android.WelcomeActivity"
             android:launchMode="singleTask"
             android:theme="@style/Theme.Bhulok.Dialog" >
         </activity>
