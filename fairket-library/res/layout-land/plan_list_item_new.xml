@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/grpRoot"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="70dp"
     android:background="@drawable/bg_gradual_buy" >
 
     <RelativeLayout
@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="5dp" >
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp" >
 
         <TextView
             android:id="@+id/txtName"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/txtName"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="5dp"
             android:text="asdfasdfa"
             android:textColor="@color/fairket_text_2"
             android:textSize="16sp" />
@@ -45,8 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/grpContent"
-        android:layout_marginBottom="5dp" >
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp" >
 
         <Button
             android:id="@+id/btnAction"

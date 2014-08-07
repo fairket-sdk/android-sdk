@@ -49,7 +49,7 @@
             android:layout_below="@id/grpCurrentPlan"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="Available paid plans"
+            android:text="Available Plans"
             android:textColor="@color/fairket_text_2"
             android:textSize="15sp" />
 

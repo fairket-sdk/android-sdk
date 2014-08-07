@@ -1,5 +1,5 @@
 #
-# generated on 2014/07/06 02:40:17
+# generated on 2014/08/04 12:02:39
 #
 # --table-start--
 dataClass=com.bhulok.sdk.android.model.data.App
@@ -131,6 +131,9 @@ fieldName=planRemainingUnits
 fieldName=expiryTime
 # --field-end--
 # --field-start--
+fieldName=trackerCookie
+# --field-end--
+# --field-start--
 fieldName=availUnits
 # --field-end--
 # --table-fields-end--
@@ -164,6 +167,12 @@ fieldName=productId
 # --field-end--
 # --field-start--
 fieldName=consumedUnits
+# --field-end--
+# --field-start--
+fieldName=trackerCookie
+# --field-end--
+# --field-start--
+fieldName=isFreePlanEvent
 # --field-end--
 # --table-fields-end--
 # --table-end--

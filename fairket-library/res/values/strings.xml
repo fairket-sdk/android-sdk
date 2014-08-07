@@ -35,7 +35,7 @@
     <string name="lock_service_disconnected_msg">Fairket metering error.\n\n
         To unlock, try later or reopening the app</string>
     <string name="lock_service_disconnected_action">Quit</string>
-    <string name="fairket_initalizing">Fairket Initializing...</string>
+    <string name="fairket_initalizing">Initializing...</string>
     <string name="lock_account_migrated">You already have a fairket account.</string>
 
 </resources>
