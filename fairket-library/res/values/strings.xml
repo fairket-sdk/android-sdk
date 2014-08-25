@@ -11,8 +11,8 @@
     <string name="lock_later_action">Later</string>
     <string name="lock_install_fairket_msg">Fairket app is required to proceed further.\n\nTo unlock, install Fairket app and signup for a pricing plan</string>
     <string name="lock_install_fairket_action">Install Fairket</string>
-    <string name="lock_kitty_balance_msg">Insufficient Fairket credits.\n\nTo unlock, topup Fairket credits</string>
-    <string name="lock_kitty_balance_action">Topup Credits</string>
+    <string name="lock_kitty_balance_msg">Insufficient Fairket balance.\n\nTo unlock, topup Fairket balance</string>
+    <string name="lock_kitty_balance_action">Topup Balance</string>
     <string name="lock_invalid_session_msg">You are not signed in.\n\n
         To unlock, signin to Fairket app</string>
     <string name="lock_invalid_session_action">Signin Fairket</string>

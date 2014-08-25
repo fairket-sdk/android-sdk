@@ -26,7 +26,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="5dp"
-                android:src="@drawable/ic_fairket" />
+                android:src="@drawable/ic_app_icon" />
 
             <TextView
                 android:id="@+id/txtApp"
