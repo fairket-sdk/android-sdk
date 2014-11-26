@@ -26,9 +26,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:gravity="center"
                 android:text="You are on trial plan"
-                android:textColor="@color/fairket_text_2"
-                android:textSize="18sp" />
+                android:textColor="@color/fairket_logo_bg"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txtActivePlanDesc"
@@ -38,26 +39,30 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:text="30 Mins left"
-                android:textColor="@color/fairket_bg"
+                android:textColor="@color/fairket_logo_blue"
                 android:textSize="16sp" />
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/txtAvail"
-            android:layout_width="wrap_content"
+            android:id="@+id/txtUnlimited"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/grpCurrentPlan"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="Available Plans"
-            android:textColor="@color/fairket_text_2"
-            android:textSize="15sp" />
+            android:layout_marginTop="15dp"
+            android:background="@color/fairket_light_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Unlimited Free Credits"
+            android:textColor="@color/fairket_dark_bg"
+            android:textSize="16sp" />
 
         <ListView
             android:id="@+id/listPlans"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/txtAvail" >
+            android:layout_below="@id/txtUnlimited"
+            android:layout_centerHorizontal="true" >
         </ListView>
     </RelativeLayout>
 
