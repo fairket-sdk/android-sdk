@@ -18,5 +18,6 @@
     <color name="fairket_btn_green">#00ac6b</color>
     <color name="fairket_logo_bg">#001128</color>
     <color name="fairket_logo_blue">#13b1f8</color>
+    <color name="fairket_blue_bg">#c8d2d4</color>
 
 </resources>

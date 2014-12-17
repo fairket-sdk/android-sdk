@@ -17,30 +17,30 @@
 
         <RelativeLayout
             android:id="@+id/grpCurrentPlan"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp" >
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" >
 
             <TextView
                 android:id="@+id/txtActivePlanTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="You are on trial plan"
                 android:textColor="@color/fairket_logo_bg"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/txtActivePlanDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtActivePlanTitle"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtActivePlanTitle"
+                android:singleLine="true"
                 android:text="30 Mins left"
                 android:textColor="@color/fairket_logo_blue"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
         </RelativeLayout>
 
         <TextView
@@ -49,10 +49,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/grpCurrentPlan"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:background="@color/fairket_light_bg"
             android:gravity="center"
-            android:padding="5dp"
+            android:padding="2dp"
             android:text="Unlimited Free Credits"
             android:textColor="@color/fairket_dark_bg"
             android:textSize="16sp" />
